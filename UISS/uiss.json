@@ -1,0 +1,49 @@
+{
+    "Variables": {
+        "tint":"#FF6316",
+        "-tint":"white",
+        "grey":"#022944",
+        "tab-bar-color":"black",
+        "-tab-bar-color":"#027669",
+        "label-color":"white",
+        "-label-color":"#027669",
+        "tab-text-color":"white",
+    },
+
+    "UINavigationBar": {
+        "tintColor": "$tint"
+    },
+        
+    "UITabBar": {
+        "tintColor": "$tab-bar-color",
+        "selectedImageTintColor": "$tint",
+        "UITabBarItem": {
+            "titleTextAttributes:normal": {
+                "textColor": "$tab-text-color"
+            },
+            "titleTextAttributes:selected": {
+                "textColor": "$tint"
+            }
+        },
+
+    },
+    
+    "UILabel":{
+        "textColor": "$label-color"
+    },
+
+    "SearchViewController": {
+        "SearchButton": {            
+            "-backgroundImage:normal": ["button-background-normal", [0,10,0,10]],
+            "-backgroundImage:highlighted": ["button-background-highlighted", [0,10,0,10]],
+            "backgroundImage:normal": ["orange_btn", [0,10,0,10]],
+            "backgroundImage:highlighted": ["orange_btn", [0,10,0,10]],
+            "titleColor:normal": ["$label-color", 0.8],
+            "titleColor:highlighted": "white",
+            "titleEdgeInsets": [1,0,0,0],
+            "UILabel": {
+                "font": ["Copperplate-Bold", 20]
+            }
+        }
+    }
+}
